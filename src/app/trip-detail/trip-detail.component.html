@@ -1,0 +1,17 @@
+<div class="container p-4">
+  <div class="row justify-content-center">
+
+      <mat-form-field appearance="outline">
+        <mat-label>Start Point</mat-label>
+        <input (input)="onChangeHandler($event,'origin')" [value]="tripDetail.origin" matInput placeholder="Start Point">
+        <mat-icon matSuffix>airport_shuttle</mat-icon>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>End Point</mat-label>
+        <input (input)="onChangeHandler($event,'destination')"  [value]="tripDetail.destination" matInput placeholder="End Point">
+        <mat-icon matSuffix>airport_shuttle</mat-icon>
+      </mat-form-field>
+      <button color="primary" (click)="addRoute()" mat-flat-button>Add Route</button>
+
+  </div>
+</div>
