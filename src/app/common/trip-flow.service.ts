@@ -75,7 +75,7 @@ export class TripFlowService {
       return false
     }
     else if (tripDetail.origin.length < 3) {
-      alert("start point length must be greater then 4")
+      alert("start point length must be greater then 3")
       return false
     }
     else if (tripDetail.destination.length < 3) {
