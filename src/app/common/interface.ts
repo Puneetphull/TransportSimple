@@ -10,4 +10,5 @@ export interface Trip {
   abbrevation:string;
   showCurve:boolean;
   showCurveDown?:boolean;
+  isContinue?:boolean;
 }
